@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .textShadowGlow{
+        text-Shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    .scrolltrack{
+
+        scale: 0 1;
+        animation: scroll-animation linear;
+        animation-timeline: scroll(y);
+        
+        
+    }
+
+    @keyframes scroll-animation {
+        to{
+            scale: 1 1;
+        }
+    }
+}
